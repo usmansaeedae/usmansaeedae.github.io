@@ -1,0 +1,20 @@
+# Keep these out of the public GitHub repository.
+
+# Original photos and videos (several GB, some files over GitHub's 100 MB limit).
+# The website uses the compressed copies in assets/ instead.
+Grad/
+ICMIAM 2025/
+ICMIAM 2026/
+Ices 2026/
+
+# Private documents, not part of the public website
+certificates/
+Old CV.docx
+CV - *
+_backup-2026-11-21/
+
+# System clutter
+Thumbs.db
+desktop.ini
+.DS_Store
+._*

@@ -1,0 +1,22 @@
+{
+  "name": "Dr Muhammad Usman Saeed Akhtar, Portfolio",
+  "short_name": "Usman Akhtar",
+  "description": "Portfolio of Dr Muhammad Usman Saeed Akhtar, Postdoctoral Research Associate at Durham University: hydrogen and dual-fuel engine models, digital twins and maritime decarbonisation.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#061226",
+  "theme_color": "#061226",
+  "icons": [
+    {
+      "src": "assets/images/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

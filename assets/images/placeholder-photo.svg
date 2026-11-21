@@ -1,0 +1,17 @@
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Gallery</p>
+      <h2>Moments from the road</h2>
+      <p class="lead">Photographs from conference travel will appear here.</p>
+    </div>
+    <div class="grid cols-3 reveal">
+      <img src="assets/images/ices_2026.jpg" alt="ICES 2026 conference photo" loading="lazy" style="border-radius:10px" />
+      <img src="assets/images/ices_2026_1.jpg" alt="ICES 2026 conference photo" loading="lazy" style="border-radius:10px" />
+      <img src="assets/images/placeholder-photo.svg" alt="Conference photo placeholder" loading="lazy" style="border-radius:10px" />
+      <img src="assets/images/placeholder-photo.svg" alt="Conference photo placeholder" loading="lazy" style="border-radius:10px" />
+      <img src="assets/images/placeholder-photo.svg" alt="Conference photo placeholder" loading="lazy" style="border-radius:10px" />
+      <img src="assets/images/placeholder-photo.svg" alt="Conference photo placeholder" loading="lazy" style="border-radius:10px" />
+    </div>
+  </div>
+</section>
