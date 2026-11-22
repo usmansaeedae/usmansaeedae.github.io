@@ -107,6 +107,38 @@
     }
   }
 
+  /* ---------- Simulation demos: play while on screen, click to pause ---------- */
+  var demos = Array.prototype.slice.call(document.querySelectorAll("video[data-demo]"));
+  demos.forEach(function (v) {
+    v.muted = true;
+    v.userPaused = reduceMotion;
+    v.setAttribute("tabindex", "0");
+    v.setAttribute("title", "Click to pause or play");
+    if (reduceMotion) { v.controls = true; v.preload = "metadata"; }
+    var toggle = function () {
+      if (v.paused) { v.userPaused = false; var pr = v.play(); if (pr && pr.catch) pr.catch(function () {}); }
+      else { v.userPaused = true; v.pause(); }
+    };
+    if (!reduceMotion) {
+      v.addEventListener("click", toggle);
+      v.addEventListener("keydown", function (e) { if (e.key === " " || e.key === "Enter") { e.preventDefault(); toggle(); } });
+    }
+  });
+  if (demos.length && !reduceMotion) {
+    if ("IntersectionObserver" in window) {
+      var dio = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          var v = en.target;
+          if (en.isIntersecting && !v.userPaused) { var pr = v.play(); if (pr && pr.catch) pr.catch(function () { v.controls = true; }); }
+          else if (!en.isIntersecting) v.pause();
+        });
+      }, { threshold: 0.25 });
+      demos.forEach(function (v) { dio.observe(v); });
+    } else {
+      demos.forEach(function (v) { v.play(); });
+    }
+  }
+
   /* ---------- Inline film players (poster + play button) ---------- */
   document.querySelectorAll("[data-inline-video]").forEach(function (btn) {
     btn.addEventListener("click", function () {

@@ -27,8 +27,9 @@ Then open http://localhost:8000. The `/d` matters: without it, Command Prompt do
 
 - **New look, "the hydrogen fingerprint":** deep marine navy with the four visible emission lines of hydrogen (410, 434, 486 and 656 nm) running through every dark band, placed at their true wavelength positions. One typeface, Archivo, used at different widths. Light and dark modes both work.
 - **Cinematic homepage:** a 15-second muted video montage behind the name (graduation stage, ICES 2026 talk, Melbourne Skydeck, the Bosphorus and the 2022 cap toss), with a pause button. It respects "reduce motion" settings.
+- **Simulations:** six short animations built for the site (engine cycle and vortex shedding on the Research page; Kelvin wake, ship motions, FuelEU fuel choices and an abatement cost curve on the Durham page). They play only while on screen and pause on click.
 - **`durham.html`:** a page for the Durham postdoc: the D2862 engine digital models and Dual-Fuel Advisor app, SEASTARS, Karachi Port and HI-ACT, plus what is coming up.
-- **`gallery.html`:** the graduation film, four short clips and 48 photos from the PhD graduation, ICMIAM 2025, ICES 2026 and ICMIAM 2026, with filters and a full-screen viewer (arrow keys and Escape work).
+- **`gallery.html`:** three short clips and photos from ICMIAM 2026, ICES 2026, ICMIAM 2025 and the PhD graduation, with filters and a full-screen viewer (arrow keys and Escape work).
 - **`conferences.html`:** rebuilt with photos for each recent conference.
 - Durham work added to the homepage, About, Research, PhD project and Projects pages; ICMIAM 2026 changed from "accepted" to presented; PhD dates updated (awarded August 2026, graduation November 2026).
 - Profile links (LinkedIn, Google Scholar, ResearchGate) are now real links on the contact page and in the footer.
@@ -44,10 +45,10 @@ projects.html, publications.html, conferences.html, teaching.html, expertise.htm
 achievements.html, downloads.html, contact.html, 404.html
 css/styles.css          design system (light and dark)
 css/fonts.css           the Archivo font, embedded so it also works when opened from the folder
-js/main.js              menus, theme, hero video, film player, lightbox, filters
+js/main.js              menus, theme, hero video, simulation players, lightbox, filters
 assets/fonts/           Archivo variable font (SIL Open Font Licence)
 assets/images/gallery/  web-sized photos (-lg 1600 px, -sm 720 px)
-assets/video/           hero loop, graduation film and clips (H.264 MP4) with posters
+assets/video/           hero loop, simulation animations and conference clips (H.264 MP4) with posters
 assets/downloads/       CV and PDFs
 _backup-2026-11-21/     the previous version of every page, CSS and JS
 ```

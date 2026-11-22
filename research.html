@@ -141,6 +141,32 @@
   </div>
 </section>
 
+<section class="section" id="simulations">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Simulations</p>
+      <h2>Engines and flow in motion</h2>
+      <p class="lead">Two short simulations built for this site with the same kinds of tools I use in research: a thermodynamic engine-cycle model and a lattice Boltzmann flow solver.</p>
+    </div>
+    <div class="grid cols-2">
+      <figure class="demo">
+        <video muted loop playsinline preload="none" data-demo poster="assets/video/engine-cycle-poster.jpg" aria-label="Animation comparing the cylinder pressure of a diesel and a hydrogen-diesel engine cycle">
+          <source src="assets/video/engine-cycle.mp4" type="video/mp4">
+        </video>
+        <figcaption><b>Diesel vs hydrogen-diesel engine cycle.</b> A single-zone model of the 4.4 L test-engine geometry. For the same fuel energy, hydrogen's faster burn raises peak cylinder pressure from about 100 to 128 bar. Illustrative model, not measured data.</figcaption>
+        <button class="demo-expand" type="button" data-lightbox data-video="assets/video/engine-cycle.mp4" data-poster="assets/video/engine-cycle-poster.jpg" data-caption="Diesel vs hydrogen-diesel engine cycle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7"/></svg>View full size</button>
+      </figure>
+      <figure class="demo">
+        <video muted loop playsinline preload="none" data-demo poster="assets/video/vortex-street-poster.jpg" aria-label="Simulation of vortices shedding behind a cylinder">
+          <source src="assets/video/vortex-street.mp4" type="video/mp4">
+        </video>
+        <figcaption><b>Vortex shedding behind a cylinder.</b> A lattice Boltzmann simulation at Reynolds number 150 on a 640 &times; 200 lattice. The shedding frequency measured from the run gives a Strouhal number of 0.214, close to published values once the 20% channel blockage is allowed for.</figcaption>
+        <button class="demo-expand" type="button" data-lightbox data-video="assets/video/vortex-street.mp4" data-poster="assets/video/vortex-street-poster.jpg" data-caption="Vortex shedding behind a cylinder"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7"/></svg>View full size</button>
+      </figure>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="ml">
   <div class="wrap split">
     <div class="reveal">
